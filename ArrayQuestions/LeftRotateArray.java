@@ -3,14 +3,14 @@ import java.util.Arrays;
 public class LeftRotateArray{
     public static void main(String[] args) {
         int[] arr = {1,2,3,4,5};
-        int r = 2;
+        int d = 2;
         LeftRotateArray obj = new LeftRotateArray();
-        obj.leftRotate(arr,r);
+        obj.leftRotate(arr,d);
         System.out.println(Arrays.toString(arr));
     }
-    public void leftRotate(int[] arr,int r){
-        reverse(0, r-1, arr);
-        reverse(r, arr.length-1, arr);
+    public void leftRotate(int[] arr,int d){
+        reverse(0, d-1, arr);
+        reverse(d, arr.length-1, arr);
         reverse(0, arr.length-1, arr);
     }
 
